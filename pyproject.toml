@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fastapi-postgres"
+version = "0.1.0"
+description = "This is a fastApi_postgres rest service"
+authors = ["Ashish Singh"]
+readme = "README.md"
+packages = [{include = "fastapi_postgres"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.89.1" #restful webservices
+uvicorn = "^0.20.0" #web container/server
+pydantic = "^1.10.4" #req res model with fastapi
+sqlalchemy = "^2.0.0" #ORM for python
+psycopg2-binary = "^2.9.5" #postgres-connector
+alembic = "^1.9.2" #db migration tool
+python-dotenv = "^0.21.1" #env file
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
