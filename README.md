@@ -6,6 +6,10 @@ Python service using FastApi and Postgres db
 * Poetry 1.3+
 
 ### Run Application
+* Run docker compose
+  ```shell
+    docker-compose up -d
+    ```
 * Enter venv
   ```shell
     poetry shell
