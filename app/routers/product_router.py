@@ -20,19 +20,17 @@ def get_db():
         db.close()
 
 
-#
-# products = [
-#     Product(code="A1", name="iphone 12", price=500),
-#     Product(code="A2", name="redmi", price=100)
-# ]
-
-
-# @router.get("/all")
-# def get_products(db: Session = Depends(get_db)):
-#     return products.get_all_products(db)
-
-
 @router.post("/")
-def get_products(req_product: request.Product, db: Session = Depends(get_db)):
+def product(req_product: request.Product, db: Session = Depends(get_db)):
     products.create_product(db, req_product)
+
+
+@router.get("/{product_id}")
+def product(product_id: int, db: Session = Depends(get_db)):
+    return products.get_product(db, product_id)
+
+
+@router.get("/all/")
+def get_products(db: Session = Depends(get_db)):
+    return products.get_all_products(db)
 

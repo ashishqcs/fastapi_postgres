@@ -19,6 +19,12 @@ Python service using FastApi and Postgres db
     make dev-env
     ```
 
+### Debug Application
+* Create debug/run configuration from your IDE for app/main.py
+* Set relevant poetry venv.
+* Set parameters as `Python: Current File (Integrated Terminal)`
+* Run/Debug app with ide
+
 ### Dev Notes
 * Create a new migration file using 
     ```shell 

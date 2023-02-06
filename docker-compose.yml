@@ -1,9 +1,9 @@
 version: '3.1'
 
 services:
-  search-api-db:
+  fastapi_db:
     image: "postgres:13.4"
-    container_name: search-api-db
+    container_name: fastapi_db
     restart: always
     environment:
       POSTGRES_USER: fastapi_user
