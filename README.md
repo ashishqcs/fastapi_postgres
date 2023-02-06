@@ -11,16 +11,16 @@ Python service using FastApi and Postgres db
     docker-compose up -d
     ```
 * Enter venv
-  ```shell
+  ```commandline
     poetry shell
     ```
 * Start app
-    ```shell
+    ```commandline
     make dev-env
     ```
 
 ### Dev Notes
 * Create a new migration file using 
-    ```bash 
+    ```shell 
     alembic revision -m <migration name>
     ```
