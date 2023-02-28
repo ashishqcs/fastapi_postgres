@@ -30,3 +30,7 @@ Python service using FastApi and Postgres db
     ```shell 
     alembic revision -m <migration name>
     ```
+    for initializing alembic with async db
+    ```shell
+    alembic init -t async migrations
+    ```
